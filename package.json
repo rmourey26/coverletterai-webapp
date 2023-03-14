@@ -1,16 +1,22 @@
 {
-  "name": "auth0-express-webapp-sample",
+  "name": "CoverLetterAI",
+  "engines": {
+    "node": ">=16.15.0"
+  },
   "scripts": {},
   "dependencies": {
+    "async": "3.2.4",
+    "aws-sdk": "2.1335.0",
+    "compression": "^1.7.4",
     "debug": "~3.2.7",
     "dotenv": "^6.1.0",
     "ejs": "^3.1.8",
     "express": "^4.18.2",
     "express-openid-connect": "^2.12.0",
+    "express-rate-limit": "^6.7.0",
+    "helmet": "^6.0.1",
     "http-errors": "~1.8.1",
     "morgan": "~1.10.0",
-    "openai": "^3.2.1",
-    "async": "3.2.4",
-    "aws-sdk": "2.1335.0"
+    "openai": "^3.2.1"
   }
 }
