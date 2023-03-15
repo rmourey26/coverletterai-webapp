@@ -3,9 +3,6 @@
   "engines": {
     "node": ">=16.15.0"
   },
-  "scripts": {
-      "build": "webpack"
-  },
   "dependencies": {
     "async": "3.2.4",
     "aws-sdk": "2.1335.0",
@@ -22,8 +19,5 @@
     "http-errors": "~1.8.1",
     "morgan": "~1.10.0",
     "openai": "^3.2.1"
-  },
-  "devDependencies": {
-    "webpack": "^5.0.0"
   }
 }
