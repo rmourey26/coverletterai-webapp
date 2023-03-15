@@ -1,6 +1,6 @@
 const dotenv = require('dotenv');
 const express = require('express');
-const https = require('https');
+const http = require('http');
 const logger = require('morgan');
 const path = require('path');
 const router = require('./routes/index');
@@ -22,9 +22,9 @@ const config = {
   auth0Logout: true
 };
 
-const port = process.env.PORT || 3003;
+const port = process.env.PORT || 3001;
 if (!config.baseURL && !process.env.BASE_URL && process.env.PORT && process.env.NODE_ENV !== 'production') {
-  config.baseURL = `https://localhost:${port}`;
+  config.baseURL = `http://localhost:${port}`;
 }
 
 app.use(auth(config));
@@ -53,7 +53,7 @@ app.use(function (err, req, res, next) {
   });
 });
 
-https.createServer(app)
+http.createServer(app)
   .listen(port, () => {
     console.log(`Listening on ${config.baseURL}`);
   });
