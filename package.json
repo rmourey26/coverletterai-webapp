@@ -5,7 +5,7 @@
   },
   "dependencies": {
     "async": "3.2.4",
-    "aws-sdk": "2.1335.0",
+    "aws-sdk": "2.1354.0",
     "@aws-sdk/client-iam": "^3.32.0",
     "@aws-sdk/client-s3": "^3.32.0",
     "compression": "^1.7.4",
